@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-import NavBar from './componentes/NavBar/NavBar';
+import NavBar from './componentes/NavBar/NavBar';  
+import ItemListContainer from './componentes/ItemListContainer'; 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
       <NavBar/>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         ¡Bienvenidos a mi App de React!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+        <h1>local shop</h1>
+        <img src= "https://thumbs.dreamstime.com/b/logotipo-local-de-la-tienda-82838863.jpg" className="App-logo" alt="logo" />
+        
+        <ItemListContainer></ItemListContainer>
+        
+      
     </div>
   );
 }
