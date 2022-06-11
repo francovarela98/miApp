@@ -1,7 +1,12 @@
 
+.nav-main{
+    display: flex;
+    flex-direction: column;
+}
 .nav-list{
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-around;
 }
 

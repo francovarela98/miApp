@@ -1,6 +1,7 @@
 import './App.css';
 import NavBar from './componentes/NavBar/NavBar';  
 import ItemListContainer from './componentes/ItemListContainer'; 
+import localshopimg from './img/localshop.jpg'
 
 function App() {
   return (
@@ -8,9 +9,11 @@ function App() {
       <header className="App-header">
       <NavBar/>
       </header>
+
         <h1>local shop</h1>
-        <img src= "https://thumbs.dreamstime.com/b/logotipo-local-de-la-tienda-82838863.jpg" className="App-logo" alt="logo" />
-        
+        <div className='localImg'>
+        <img width="500" src={localshopimg} className="App-logo" alt="logo" />
+        </div>
         <ItemListContainer></ItemListContainer>
         
       
