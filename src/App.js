@@ -2,6 +2,7 @@ import './App.css';
 import NavBar from './componentes/NavBar/NavBar';  
 import ItemListContainer from './componentes/ItemListContainer'; 
 import localshopimg from './img/localshop.jpg'
+import ItemCount from './componentes/ItemCount/ItemCount';
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
 
         <h1>local shop</h1>
         <div className='localImg'>
-        <img width="500" src={localshopimg} className="App-logo" alt="logo" />
+        <img width="300" src={localshopimg} className="App-logo" alt="logo" />
         </div>
+        <ItemCount stock={5} initial={1}/>
         <ItemListContainer></ItemListContainer>
         
       
