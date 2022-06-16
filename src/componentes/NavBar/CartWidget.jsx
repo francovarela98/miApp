@@ -4,7 +4,7 @@ import cartimg from '../../img/cart.png'
 function CartWidget() {
   return (
     <div>
-        <img width="40" src={cartimg} alt="carrito" />
+        <img width="60" src={cartimg} alt="carrito" />
     </div>
   )
 }

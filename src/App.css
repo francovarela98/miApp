@@ -7,12 +7,14 @@ h1{
   text-align: center;
   text-transform: uppercase;
   text-align: center;
-  color: blue;
+  color: rgb(202, 118, 202);
 }
 .localImg{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px 20px 20px 20px;
 
 }
+

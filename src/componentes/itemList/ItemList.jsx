@@ -1,13 +1,13 @@
 import React from 'react'
 import Item from '../item/Item'
+import './itemList.css'
 
 const ItemList = ({ items }) => {
   return (
-    <div>
+    <div className='itemContenedores'>
       { 
       items.map ((item)=>{
-
-         return <Item item={item}/>
+return <Item item={item}/>
        })
        }
 

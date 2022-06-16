@@ -12,9 +12,9 @@ function App() {
       <NavBar/>
       </header>
 
-        <h1>local shop</h1>
+        <h1>ceramixs</h1>
         <div className='localImg'>
-        <img width="300" src={localshopimg} className="App-logo" alt="logo" />
+        <img width="500" src={localshopimg} className="App-logo" alt="logo" />
         </div>
         <ItemCount stock={5} initial={1}/>
         <ItemListContainer></ItemListContainer>

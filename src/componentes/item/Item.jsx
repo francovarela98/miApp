@@ -4,11 +4,11 @@ import './item.css'
 const Item = ({ item }) => {
   return (
       
-    <div className='itemContenedor'>
+    <div className='itemsContenedor'>
         <div>
-        <img width='200' src={item.img} alt='imagen'/>
+        <img width='400' src={item.img} alt='imagen'/>
         <h2>{item.name}</h2>
-        <h3>{item.price}</h3>
+        <h3>$ {item.price}</h3>
         </div>
        
     </div>

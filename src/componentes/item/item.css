@@ -1,5 +1,7 @@
 .itemsContenedor{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    text-transform: uppercase;
+    text-align: center;
 
 }
