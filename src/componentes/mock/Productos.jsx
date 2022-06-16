@@ -1,0 +1,50 @@
+export const Productos =[
+{
+    id: 1,
+    name: 'taza yellow', 
+    price: 750,
+    stock: 10,
+    img: './img/taza01.jpg',
+    category: 'taza',
+},
+{
+    id: 2,
+    name: 'taza pink', 
+    price: 750,
+    stock: 10,
+    img: './img/taza02.jpg',
+    category: 'taza',
+},
+{
+    id: 3,
+    name: 'taza blue', 
+    price: 750,
+    stock: 10,
+    img: './img/taza03.jpg',
+    category: 'taza',
+},
+{
+    id: 4,
+    name: 'cuenco cuarzo', 
+    price: 950,
+    stock: 15,
+    img: './img/cuenco01.jpg',
+    category: 'cuenco',
+},
+{
+    id: 5,
+    name: 'cuenco mar', 
+    price: 950,
+    stock: 15,
+    img: './img/cuenco02.jpg',
+    category: 'cuenco',
+},
+{
+    id: 6,
+    name: 'cuenco playa', 
+    price: 950,
+    stock: 15,
+    img: './img/cuenco03.jpg',
+    category: 'cuenco',
+}
+]

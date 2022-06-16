@@ -5,10 +5,14 @@ import './itemCount.css'
 function ItemCount({stock, initial}) {
     const [count, setCount] = useState (initial);
     function suma(){
+        if(count< stock){
         setCount(count +1)
     }
+    }
     function resta(){
-        setCount(count -1)
+        if(count> 0){
+            setCount(count -1)
+        }
     }
   return (
     <div className='itemCount'>

@@ -1,0 +1,5 @@
+.itemsContenedor{
+    display: flex;
+    flex-direction: column;
+
+}
