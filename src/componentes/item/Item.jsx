@@ -9,6 +9,7 @@ const Item = ({ item }) => {
         <img width='400' src={item.img} alt='imagen'/>
         <h2>{item.name}</h2>
         <h3>$ {item.price}</h3>
+        <a>ver detalles</a>
         </div>
        
     </div>

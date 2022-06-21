@@ -9,6 +9,10 @@ h1{
   text-align: center;
   color: rgb(202, 118, 202);
 }
+.appHeader{
+  background-color: rgb(128, 89, 89);
+  box-shadow: 10px;
+}
 .localImg{
     width: 100%;
     display: flex;

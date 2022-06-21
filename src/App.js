@@ -3,12 +3,13 @@ import NavBar from './componentes/NavBar/NavBar';
 import ItemListContainer from './componentes/ItemListContainer'; 
 import localshopimg from './img/localshop.jpg'
 import ItemCount from './componentes/ItemCount/ItemCount';
+import ItemDetailContainer from './componentes/ItemDetailContainer';
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="appHeader">
       <NavBar/>
       </header>
 
@@ -18,6 +19,7 @@ function App() {
         </div>
         <ItemCount stock={5} initial={1}/>
         <ItemListContainer></ItemListContainer>
+        <ItemDetailContainer>Detalle de producto</ItemDetailContainer>
         
       
     </div>
