@@ -10,7 +10,7 @@ function ItemDetailContainer() {
     const traerProducto = new Promise ((res,rej)=>{
         setTimeout (()=>{
         res(Productos[itemId])
-        },2000);
+        },600);
     })
     traerProducto.then((res)=>{
         setproducto(res)

@@ -20,7 +20,8 @@ function App() {
         </div>
         <ItemCount stock={5} initial={1}/>
         <Routes>
-          <Route path='/' element={<ItemListContainer/>}></Route>
+          <Route path='/' element={<ItemListContainer/>}>Home</Route>
+            <Route path='/category/:categoryId' element={<ItemListContainer/>}></Route>
           <Route path='/articulos/:itemId' element={<ItemDetailContainer/>}></Route>
         </Routes>
         </BrowserRouter>

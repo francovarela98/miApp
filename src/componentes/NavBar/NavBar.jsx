@@ -11,7 +11,10 @@ function NavBar() {
               <NavLink className="styleLink" to='/'>Home</NavLink>
             </li>
             <li>
-              <NavLink className="styleLink"  to='/articulos'>Artículos</NavLink>
+              <NavLink className="styleLink" to='/category/taza'>Tazas</NavLink>
+            </li>
+            <li>
+              <NavLink className="styleLink" to='/category/cuenco'>Cuencos</NavLink>
             </li>
             <CartWidget></CartWidget>
         </ul>

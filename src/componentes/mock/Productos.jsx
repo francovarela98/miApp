@@ -4,7 +4,7 @@ export const Productos =[
     name: 'taza yellow', 
     price: 750,
     stock: 10,
-    img: './img/taza01.jpg',
+    img: 'https://i.pinimg.com/564x/19/a1/52/19a152f58ad8daa1a21eb5683ef808e4.jpg',
     category: 'taza',
 },
 {
@@ -12,7 +12,7 @@ export const Productos =[
     name: 'taza pink', 
     price: 750,
     stock: 10,
-    img: './img/taza02.jpg',
+    img: 'https://i.pinimg.com/564x/9e/57/49/9e5749b2164102083ad93342e3cb5bd1.jpg',
     category: 'taza',
 },
 {
@@ -20,7 +20,7 @@ export const Productos =[
     name: 'taza blue', 
     price: 750,
     stock: 10,
-    img: './img/taza03.jpg',
+    img: 'https://i.pinimg.com/564x/fb/0d/0d/fb0d0da5c39a903e3f4a39e0d859ba42.jpg',
     category: 'taza',
 },
 {
@@ -28,7 +28,7 @@ export const Productos =[
     name: 'cuenco cuarzo', 
     price: 950,
     stock: 15,
-    img: './img/cuenco01.jpg',
+    img: 'https://i.pinimg.com/564x/b9/df/38/b9df385f84ac457f86cb6d52ff91eaf9.jpg',
     category: 'cuenco',
 },
 {
@@ -36,7 +36,7 @@ export const Productos =[
     name: 'cuenco mar', 
     price: 950,
     stock: 15,
-    img: './img/cuenco02.jpg',
+    img: 'https://i.pinimg.com/564x/ce/b6/fc/ceb6fcdc944af5af633dc7da6d0bd617.jpg',
     category: 'cuenco',
 },
 {
@@ -44,7 +44,7 @@ export const Productos =[
     name: 'cuenco playa', 
     price: 950,
     stock: 15,
-    img: './img/cuenco03.jpg',
+    img: 'https://i.pinimg.com/564x/ef/68/50/ef68508de5cda1b866aec3922f44ce98.jpg',
     category: 'cuenco',
 }
 ]
