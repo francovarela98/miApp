@@ -4,23 +4,26 @@ import ItemListContainer from './componentes/ItemListContainer';
 import localshopimg from './img/localshop.jpg'
 import ItemCount from './componentes/ItemCount/ItemCount';
 import ItemDetailContainer from './componentes/ItemDetailContainer';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 
 function App() {
   return (
     <div className="App">
+       <BrowserRouter>
       <header className="appHeader">
       <NavBar/>
       </header>
-
         <h1>ceramixs</h1>
         <div className='localImg'>
         <img width="500" src={localshopimg} className="App-logo" alt="logo" />
         </div>
         <ItemCount stock={5} initial={1}/>
-        <ItemListContainer></ItemListContainer>
-        <ItemDetailContainer>Detalle de producto</ItemDetailContainer>
-        
+        <Routes>
+          <Route path='/' element={<ItemListContainer/>}></Route>
+          <Route path='/articulos/:itemId' element={<ItemDetailContainer/>}></Route>
+        </Routes>
+        </BrowserRouter>
       
     </div>
   );

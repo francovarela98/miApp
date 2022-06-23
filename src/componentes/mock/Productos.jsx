@@ -1,6 +1,6 @@
 export const Productos =[
 {
-    id: 1,
+    id: 0,
     name: 'taza yellow', 
     price: 750,
     stock: 10,
@@ -8,7 +8,7 @@ export const Productos =[
     category: 'taza',
 },
 {
-    id: 2,
+    id: 1,
     name: 'taza pink', 
     price: 750,
     stock: 10,
@@ -16,7 +16,7 @@ export const Productos =[
     category: 'taza',
 },
 {
-    id: 3,
+    id: 2,
     name: 'taza blue', 
     price: 750,
     stock: 10,
@@ -24,7 +24,7 @@ export const Productos =[
     category: 'taza',
 },
 {
-    id: 4,
+    id: 3,
     name: 'cuenco cuarzo', 
     price: 950,
     stock: 15,
@@ -32,7 +32,7 @@ export const Productos =[
     category: 'cuenco',
 },
 {
-    id: 5,
+    id: 4,
     name: 'cuenco mar', 
     price: 950,
     stock: 15,
@@ -40,7 +40,7 @@ export const Productos =[
     category: 'cuenco',
 },
 {
-    id: 6,
+    id: 5,
     name: 'cuenco playa', 
     price: 950,
     stock: 15,

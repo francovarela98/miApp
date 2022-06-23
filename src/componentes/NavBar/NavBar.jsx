@@ -1,14 +1,18 @@
 import React from 'react'
 import CartWidget from './CartWidget'
 import './navBar.css'
+import {NavLink} from 'react-router-dom'
 
 function NavBar() {
   return (
     <nav className="nav-main"> 
         <ul className="nav-list">
-            <li>Link 1</li>
-            <li>link 2</li>
-            <li>Link 3</li>
+            <li>
+              <NavLink className="styleLink" to='/'>Home</NavLink>
+            </li>
+            <li>
+              <NavLink className="styleLink"  to='/articulos'>Artículos</NavLink>
+            </li>
             <CartWidget></CartWidget>
         </ul>
         
