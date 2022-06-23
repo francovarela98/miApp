@@ -5,7 +5,7 @@ import {useParams} from 'react-router-dom'
 
 function ItemListContainer() {
     const [productos, setproductos]= useState([])
-    const {categoryId}= useParams();
+    const { categoryId }= useParams();
     useEffect (()=>{
     const traerProductos = new Promise ((res,rej)=>{
         setTimeout (()=>{

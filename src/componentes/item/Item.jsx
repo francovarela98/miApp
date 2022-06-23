@@ -10,11 +10,10 @@ const Item = ({ item }) => {
         <div>
         <img width='400' src={item.img} alt={item.name}></img>
         <h2>{item.name}</h2>
-        <h3>$ {item.price}</h3>
+        <h3> $ {item.price}</h3>
         <Link to={urlDetalle}>
           <button>ver detalle</button>
         </Link>
-        
         </div>
        
     </div>

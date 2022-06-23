@@ -1,4 +1,6 @@
 import React from 'react'
+import ItemCount  from "./ItemCount/ItemCount.jsx";
+
 
 function ItemDetail({item}) {
   const styles= {
@@ -11,7 +13,8 @@ function ItemDetail({item}) {
         <h2>Detalle de producto</h2>
         <img width='400' src={item.img} alt='imagen'/>
         <h2>{item.name}</h2>
-        <p>{item.price}</p>
+        <p> $ {item.price}</p>
+         <ItemCount stock={5} initial={1}/>
         
     </div>
   )
