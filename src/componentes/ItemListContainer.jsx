@@ -17,7 +17,7 @@ function ItemListContainer() {
           })
           res(itemsFound);
          }
-        }, 2000);
+        }, 500);
     })
     traerProductos.then((res)=>{
         setproductos(res)

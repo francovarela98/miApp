@@ -13,7 +13,6 @@ function App() {
       <header className="appHeader">
       <NavBar/>
       </header>
-        <h1>ceramixs</h1>
         <div className='localImg'>
         <img width="500" src={localshopimg} className="App-logo" alt="logo" />
         </div>

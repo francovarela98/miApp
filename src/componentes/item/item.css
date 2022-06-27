@@ -3,5 +3,16 @@
     flex-direction: row;
     text-transform: uppercase;
     text-align: center;
+    margin: 20px 20px 20px 20px;
 
+}
+.buttonDetalle{
+    background-color: rgb(128, 80, 80);
+    color: azure;
+    text-decoration: none;
+    border-style: none;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
 }
