@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import './itemCount.css'
 
-function ItemCount({stock, initial}) {
+function ItemCount({stock, initial, onAdd}) {
     const [count, setCount] = useState (initial);
     function suma(){
         if(count< stock){
@@ -16,10 +16,10 @@ function ItemCount({stock, initial}) {
     }
   return (
     <div className='itemCount'>
-        <button onClick={resta}>-</button>
-        <span>{count}</span>
-        <button onClick={suma}>+</button>
-        <button>agregar al carrito</button>
+        <button className='buttonDetail' onClick={resta}>-</button>
+        <span className='buttonDetail'>{count}</span>
+        <button className='buttonDetail' onClick={suma}>+</button>
+        <button className='buttonDetail' onClick={()=>onAdd(count)}>agregar al carrito</button>
 
     </div>
   )

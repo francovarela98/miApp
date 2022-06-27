@@ -1,11 +1,12 @@
 .itemsContenedor{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-transform: uppercase;
     text-align: center;
     margin: 20px 20px 20px 20px;
-
+    align-items: center;
 }
+
 .buttonDetalle{
     background-color: rgb(128, 80, 80);
     color: azure;

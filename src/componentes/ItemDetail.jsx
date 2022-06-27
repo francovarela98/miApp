@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { Link } from "react-router-dom";
 import ItemCount  from "./ItemCount/ItemCount.jsx";
+import './item/item.css'
 
 
 function ItemDetail({item})  {
@@ -13,17 +14,22 @@ function ItemDetail({item})  {
 
   const styles= {
     maxwidth: '200 px',
-    margin: '50px 50px 50px 450px',
+    margin: '50px 50px 50px 450px', 
 
   }
   return (
-    <div style={styles}>
-        <h2>Detalle de producto</h2>
-        <img width='400' src={item.img} alt='imagen'/>
+    <div  className="itemsContenedor">
+        <h1>Detalle de producto</h1>
         <h2>{item.name}</h2>
+        <img width='400'  src={item.img} alt='imagen'/>
         <p> $ {item.price}</p>
-         <ItemCount stock={item.stock} initial={1} onAdd={onAdd}/>
-         <Link to='/cart'>Terminar mi compra</Link>
+        {
+          count === 0
+          ? (<ItemCount stock={item.stock} initial={1} onAdd={onAdd}/>)
+          : (<Link to='/cart'>Terminar mi compra</Link>)
+        }
+         
+    
         
     </div>
   )

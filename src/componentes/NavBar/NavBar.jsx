@@ -9,7 +9,7 @@ function NavBar() {
         <ul className="nav-list">
             <li>
               <NavLink className="styleLink" to='/'>
-                <img width="80px" src="./img/ceramix.png" alt="logo" />
+                <img width="50px" src="./img/ceramix.png" alt="logo" />
               </NavLink>
             </li>
             <li>
