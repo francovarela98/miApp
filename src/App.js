@@ -5,12 +5,14 @@ import localshopimg from './img/localshop.jpg'
 import ItemDetailContainer from './componentes/ItemDetailContainer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Cart from './componentes/cart/Cart'
+import {CartProvider} from './context/CartContext'
 
 
 
 function App() {
   return (
     <div className="App">
+      <CartProvider>
        <BrowserRouter>
       <header className="appHeader">
       <NavBar/>
@@ -25,7 +27,7 @@ function App() {
           <Route path='/cart' element={<Cart/>}></Route>
         </Routes>
         </BrowserRouter>
-      
+         </CartProvider>
     </div>
   );
 }
