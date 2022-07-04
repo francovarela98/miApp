@@ -19,11 +19,7 @@ function ItemDetail({item})  {
     addToCart (item,cantidad)
    };
 
-  const styles= {
-    maxwidth: '200 px',
-    margin: '50px 50px 50px 450px', 
-
-  }
+  
   return (
     <div  className="itemsContenedor">
         <h1>Detalle de producto</h1>
