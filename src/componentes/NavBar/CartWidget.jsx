@@ -2,6 +2,7 @@ import React from 'react'
 import  {useContext} from 'react'
 import  {CartContext} from "../../context/CartContext";
 import cartimg from '../../img/cart.png'
+import { Link } from "react-router-dom";
 
 
 function CartWidget() {
@@ -9,7 +10,7 @@ function CartWidget() {
 
   return (
     <div>
-        <img width="60" src={cartimg} alt="carrito" />
+        <Link to='/cart'><img width="60" src={cartimg} alt="carrito" /></Link>
         <span>{getTotalItems()}</span>
     </div>
   )

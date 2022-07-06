@@ -9,6 +9,7 @@ import {CartProvider} from './context/CartContext'
 
 
 
+
 function App() {
   return (
     <div className="App">
@@ -17,9 +18,11 @@ function App() {
       <header className="appHeader">
       <NavBar/>
       </header>
-        <div className='localImg'>
-        <img width="500" src={localshopimg} className="App-logo" alt="logo" />
+      
+      <div className='localImg'>
+        <img width="400" src={localshopimg} className="App-logo" alt="logo" />
         </div>
+       
         <Routes>
           <Route path='/' element={<ItemListContainer/>}>Home</Route>
             <Route path='/category/:categoryId' element={<ItemListContainer/>}></Route>
