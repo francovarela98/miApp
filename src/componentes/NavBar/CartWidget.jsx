@@ -10,7 +10,7 @@ function CartWidget() {
   return (
     <div>
         <img width="60" src={cartimg} alt="carrito" />
-        <p>{getTotalItems()}</p>
+        <span>{getTotalItems()}</span>
     </div>
   )
 }

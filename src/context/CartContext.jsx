@@ -8,21 +8,34 @@ export const CartContext = createContext();
 export const CartProvider = ({children})=> {
  const [cart, setCart] = useState ([]);
 
- const addToCart =(item, cantidad)=>{
-    setCart([...cart,{...item, cantidad}])
+ const addToCart =(item, cant)=>{
+    setCart([...cart,{...item, cant}])
  }
-
+ 
+ function removeItem(id) {
+    let newCart = cart.filter((item) => item.id !== id);
+    setCart(newCart);
+  }
  function isInCartContext(id){
     return cart.some( item => item.id === id );
   }
 
   function getTotalItems() {
-    return (3)
+    let total= 0;
+    cart.forEach((item)=> (total = total + item.cant));
+    return total;
  }
-
+function clearCart() {
+    setCart([])
+}
+function getTotalPrice() {
+    let total= 0;
+    cart.forEach((item)=> (total = total + (item.cant*item.price)));
+    return total;
+ }
  useEffect(() => {
     console.log(cart); 
 }, [cart]);
-    return  <CartContext.Provider value= {{cart, addToCart, isInCartContext, getTotalItems}}> {children} </CartContext.Provider>
+    return  <CartContext.Provider value= {{cart, addToCart, isInCartContext, getTotalItems, removeItem, clearCart, getTotalPrice}}> {children} </CartContext.Provider>
     
 };
