@@ -1,6 +1,6 @@
 
 import { initializeApp } from "firebase/app";
-import {getFirestore, collection, doc, getDocs, getDoc} from 'firebase/firestore'
+import {getFirestore, collection, doc, getDocs, getDoc, query, where} from 'firebase/firestore'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -40,6 +40,21 @@ export async function getDetailItem(id){
         id: docSnapShot.id, ...docSnapShot.data()
     }
 
+}
+
+export async function getItemByCategory (idcategory){
+   const articulosCollection= collection (appFirestore, "category")
+   const q = query (articulosCollection,where("category","===",idcategory))
+   const articulosSnapShot = await getDocs(q)
+   let respuesta = articulosSnapShot.docs.map (doc=>{
+    return{
+        ...doc.data(),
+        id: doc.id
+    }
+ 
+    } )
+
+return respuesta
 }
 
 export default appFirestore
