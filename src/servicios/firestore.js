@@ -43,14 +43,14 @@ export async function getDetailItem(id){
 }
 
 export async function getItemByCategory (idcategory){
-   const articulosCollection= collection (appFirestore, "category")
-   const q = query (articulosCollection,where("category","===",idcategory))
+   const articulosCollection= collection (appFirestore, "Articulos")
+   const q = query (articulosCollection,where("category","==", idcategory))
    const articulosSnapShot = await getDocs(q)
    let respuesta = articulosSnapShot.docs.map (doc=>{
     return{
         ...doc.data(),
         id: doc.id
-    }
+    };
  
     } )
 
