@@ -9,7 +9,7 @@ const Item = ({ item }) => {
     <div className='itemsContenedor'>
         <div>
         <h2>{item.name}</h2>
-        <img width='400' src={item.img} alt={item.name}></img>
+        <img width='320' src={item.img} alt={item.name}></img>
         
         <h3> $ {item.price}</h3>
         <Link to={urlDetalle}>

@@ -6,7 +6,12 @@
     margin: 30px 30px 30px 30px;
     align-items: center;
 }
-
+.contenedorBotones{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
 .buttonDetalle{
     background-color: rgb(128, 80, 80);
     color: azure;
@@ -17,4 +22,21 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     margin-left: 20px;
+    margin-bottom: 20px;
+    align-self: center;
+
+}
+ 
+.precioTotal{
+    background-color: rgb(122, 170, 60);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+    align-self: center;
+    padding: 5px;
+
 }
