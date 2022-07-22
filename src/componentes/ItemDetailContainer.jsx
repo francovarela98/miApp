@@ -12,10 +12,10 @@ function ItemDetailContainer() {
     })
     },[itemId])
   return (
-    <>
+  
     <ItemDetail item={producto}/>
-    <button onClick={dataToFirestore}>traer Datos</button>
-    </>
+   
+    
   );
 };
 

@@ -1,6 +1,6 @@
 
 import { initializeApp } from "firebase/app";
-import {getFirestore, collection, doc, getDocs, getDoc, query, where, setDoc,addDoc} from 'firebase/firestore'
+import {getFirestore, collection, doc, setDoc, getDocs, getDoc, query, where, addDoc} from 'firebase/firestore'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -110,12 +110,13 @@ export async function dataToFirestore(){
 
         const articulosCollection= collection (appFirestore, "Articulos")
 
-        Productos.forEach(item=>{
+        Productos.forEach((item)=>{
         
-            const newDoc =doc(articulosCollection)
-            setDoc = (newDoc, item).then(res=>{
+            const newDoc = doc(articulosCollection);
+            setDoc(newDoc, item)
+            .then((res)=>{
                 console.log("documentoguardado", newDoc.id)
-            })
+            }).catch((error) => console.log("error obteniendo los datos: ", error));
         })
        
 
@@ -126,6 +127,7 @@ export async function createBuyOrder(dataOrder){
 const orderCollectionRef = collection(appFirestore, "orders")
 
 const orderCreated= await addDoc(orderCollectionRef, dataOrder)
+return orderCreated
 } 
 
 
