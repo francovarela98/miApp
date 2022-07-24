@@ -33,9 +33,7 @@ function getTotalPrice() {
     cart.forEach((item)=> (total = total + (item.cant*item.price)));
     return total;
  }
- useEffect(() => {
-    console.log(cart); 
-}, [cart]);
+ 
     return  <CartContext.Provider value= {{cart, addToCart, isInCartContext, getTotalItems, removeItem, clearCart, getTotalPrice}}> {children} </CartContext.Provider>
     
 };

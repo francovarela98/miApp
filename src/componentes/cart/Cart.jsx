@@ -4,36 +4,17 @@ import { CartContext } from "../../context/CartContext";
 import '../item/item.css'
 import { Link } from "react-router-dom";
 import {createBuyOrder} from "../../servicios/firestore"
+import CartForm from './CartForm';
 
 function Cart() {
     const {cart, removeItem, clearCart, getTotalPrice}= useContext(CartContext)
 
-    function handleBuyOrder(params) {
-        const dataOrder ={
-            buyer: {
-                name: "Franco Varela",
-                phone: "1122334455",
-                email: "fjvcoder@gmail.com"
-    
-            },
-            items: cart,
-            total: getTotalPrice(),
-        
-        }
-
-        createBuyOrder(dataOrder).then(()=>{
-            clearCart()
-            alert ("Se ha completado tu compra!")
-        })
-        
-    }
-
-
     if (cart.length===0) { 
         return(
-        <Link to='/'><h1>Aun no tienes productos en el carrito, volver al inicio</h1></Link>
+        <Link to='/'><h1>Volver al inicio</h1></Link>
        ) }
   return (
+    <>
     <div>
         {
             cart.map(item=>(
@@ -48,15 +29,16 @@ function Cart() {
         <button onClick={ () =>removeItem(item.id)} className='buttonDetalle'>Eliminar del carrito</button>
         </div>
        
-    </div>
+     </div>
      ) )
         }
-        <div className="contenedorBotones">
-        <span className="precioTotal">Precio total: $ {getTotalPrice()} </span>
-        <button onClick={handleBuyOrder} className='buttonDetalle'>Ir al checkout</button>
-        <button onClick={clearCart} className='buttonDetalle'>Vaciar el Carrito</button>
+        <div className='precioTotal'>
+            <p>Total a pagar: $ {getTotalPrice()} </p>
         </div>
+        <CartForm cart={cart} getTotalPrice={getTotalPrice} clearCart={clearCart} createBuyOrder= {createBuyOrder}/>
+       
     </div>
+    </>
   )
 }
 

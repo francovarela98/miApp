@@ -1,0 +1,23 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-center;
+    align-items: center;
+    
+}
+
+.buttonDetalle{
+    background-color: rgb(128, 80, 80);
+    color: azure;
+    text-decoration: none;
+    border-style: none;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    align-self: center;
+
+}
